@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mobile version</title>
+    <link rel="icon" href="img/favicon.ico">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.1/css/all.css"
+        integrity="sha384-vp86vTRFVJgpjF9jiIGPEEqYqlDwgyBgEF109VFjmqGmIY/Y4HV4d3Gp2irVfcrp" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Sofia&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="Portfolio.css">
+
+<body>
+    <header>
+        <nav> <!-- Navigation mobile -->
+            <input type="checkbox" id="check">
+            <label for="check" class="checkbtn" aria-expanded="false">
+                <i class="fas fa-bars"></i>
+            </label>
+            <div class="nav-mobile w3-animate-right">
+                <a href="#Projets">Projets</a> <!-- Utiliser ::before pour rajouter le logo de la plateforme -->
+                <a href="#Maquettes">Maquettes</a>
+                <a href="">Autre</a>
+                <a href="mailto:rachel.koehler@yandex.com">Contact</a>
+            </div>
+            <!-- Navigation ordinateur : sur petits écrans stacker les onglets /empiler-->
+            <div class="section_générale">
+                <ul class="section_projets">
+
+                    <li class="déroulant">
+                        <a href="#Projets" class="box"><strong>PROJETS</strong></a>
+                        <ul class="sous">
+                            <li><a href="#Algorithmie">Algorithmie</a></li> <!--Morpion-->
+                            <li><a href="#Développement_web">Développement Web</a></li> <!--Fansite-->
+                            <li><a href="#Virtualisation">Virtualisation</a></li> <!--VMWare-->
+                        </ul>
+                    </li>
+                </ul>
+                <ul class="section_maquettes">
+
+                    <li class="déroulant">
+                        <a href="#Maquettes" class="box"><strong>MAQUETTES</strong></a>
+                        <ul class="sous">
+                            <li><a href="#Algorithmie">Algorithmie</a></li> <!--Morpion-->
+                            <li><a href="#Développement_web">Développement Web</a></li> <!--Fansite-->
+                            <li><a href="#Virtualisation">Virtualisation</a></li> <!--VMWare-->
+                        </ul>
+                    </li>
+                </ul>
+                <ul>
+                    <li><a href="mailto:rachel.koehler@laplateforme.io" class="contact">ME CONTACTER !</a></li>
+                </ul> <!--style possible :https://codepen.io/nelledejones/pen/gOOPWrK-->
+                <ul class="logo">
+                    <p><strong>(ﾉ◕ヮ◕)ﾉ*:･ﾟ✧</strong></p>
+                    <a href="https://www.linkedin.com/in/rachel-koehler-b667a1160/"><img src="imgs/logo/lineddin.svg"
+                            alt="Linkedin" width="55" height="55"></a>
+                    <a href="https://github.com/rachel-koehler"><img src="imgs/logo/github.svg" alt="Github" width="47"
+                            height="47"></a>
+                </ul>
+
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="content-container">
+            <article class="col-container">
+                <div class="zero">
+                    <h1 class="xl-font"><strong>ALGORITHMIE</strong></h1>
+                    <h2><em>Coder un morpion en Python</em></h2>
+                </div>
+                <div class="column-one">
+                    <p>Créer un morpion en Python, sans importations et en quelques jours</p>
+                </div>
+                <div class="column-two">
+                    <img src="imgs/screen_morpion/Capture_d’écran_1.png" alt="" class="screen">
+                </div>
+            </article>
+        </section>
+        <section class="content-container">
+            <article class="col-container">
+                <div class="column-three">
+                    <p>Créer un morpion en Python, sans importations et en quelques jours</p>
+                    <button class="bouton">Pour en savoir plus</button>
+                </div>
+                <div class="column-four">
+                    <img src="imgs/screen_morpion/Capture_d’écran_2.png" alt="" class="screen">
+                </div>
+            </article>
+        </section>
+
+    </main>
+
+    <footer>
+        <p>Réalisé avec passion par moi-même ♥ </p>
+    </footer>
+</body>
+
+<!--Creating an Overlay with Transparent Links over the 3 petals, then turn them into moving petals
+animation :https://www.kirupa.com/html5/introduction_css_animations.htm-->
